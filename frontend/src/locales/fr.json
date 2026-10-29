@@ -890,6 +890,20 @@
   },
   "transactions": {
     "title": "Transactions",
+    "mortgageAllocation": "Répartition du paiement du prêt immobilier",
+    "mortgagePrincipal": "Remboursement du capital",
+    "mortgageInterest": "Intérêts",
+    "mortgageCurrencyHint": "Saisissez toutes les parts en {{currency}}.",
+    "mortgageSplitPercentages": "Répartition du paiement : {{principal}}% de capital / {{interest}}% d'intérêts",
+    "mortgagePaymentTotal": "Total des parts : {{currency}} {{total}} ; paiement : {{currency}} {{payment}}",
+    "saveMortgageAllocation": "Enregistrer la répartition",
+    "mortgageSaved": "Répartition du prêt enregistrée",
+    "mortgageRemoved": "Répartition du prêt supprimée",
+    "removeMortgageAllocation": "Supprimer la répartition",
+    "mortgageSaveError": "Impossible d'enregistrer la répartition. Vérifiez que les parts correspondent au montant du paiement.",
+    "mortgageSavedSummary": "Totaux enregistrés : {{currency}} {{principal}} de capital ({{principalPercentage}}%) et {{currency}} {{interest}} d'intérêts ({{interestPercentage}}%)",
+    "mortgageHistoricalNote": "Ce paiement est antérieur au solde enregistré du prêt. Sa répartition est enregistrée, mais la dette n'est pas réduite une seconde fois.",
+    "mortgageBankManagedNote": "Votre banque communique le solde de ce prêt, la répartition est donc enregistrée sans comptabiliser de nouveau le capital.",
     "section": "Finances",
     "monthPrevious": "Mois précédent",
     "monthNext": "Mois suivant",
@@ -2159,6 +2173,7 @@
     "byIncome": "Par revenus",
     "byExpenses": "Par dépenses",
     "net": "Net",
+    "netFlow": "Flux net",
     "assetsAndAccounts": "Actifs et comptes",
     "youOwn": "Ce que vous possédez",
     "youOwe": "Ce que vous devez",
@@ -2778,7 +2793,9 @@
         "unlink_transfer": "Délier le virement",
         "update_goal": "Mettre à jour un objectif",
         "update_budget": "Mettre à jour un budget",
-        "delete_budget": "Supprimer un budget"
+        "delete_budget": "Supprimer un budget",
+        "update_transaction_notes": "Modifier les notes de la transaction",
+        "create_category_group": "Créer un groupe de catégories"
       },
       "summary": {
         "categorize": "{{count}} transaction(s) → {{category}}",
@@ -2796,7 +2813,9 @@
         "updateGoal": "{{name}} → {{changes}}",
         "updateBudget": "{{category}} ({{month}}) : {{before}} → {{after}}",
         "deleteBudget": "{{category}} : {{amount}} pour {{month}}",
-        "deleteRecurringBudget": "{{category}} : {{amount}} chaque mois à partir de {{month}}"
+        "deleteRecurringBudget": "{{category}} : {{amount}} chaque mois à partir de {{month}}",
+        "updateTransactionNotes": "{{description}}: {{before}} → {{after}}",
+        "createCategoryGroup": "« {{name}} »"
       }
     },
     "conversation": {

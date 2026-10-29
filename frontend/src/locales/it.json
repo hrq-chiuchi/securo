@@ -890,6 +890,20 @@
   },
   "transactions": {
     "title": "Transazioni",
+    "mortgageAllocation": "Dettaglio del pagamento del mutuo",
+    "mortgagePrincipal": "Quota capitale",
+    "mortgageInterest": "Interessi",
+    "mortgageCurrencyHint": "Inserisci tutte le parti in {{currency}}.",
+    "mortgageSplitPercentages": "Ripartizione del pagamento: {{principal}}% capitale / {{interest}}% interessi",
+    "mortgagePaymentTotal": "Totale delle parti: {{currency}} {{total}}; pagamento: {{currency}} {{payment}}",
+    "saveMortgageAllocation": "Salva dettaglio del mutuo",
+    "mortgageSaved": "Dettaglio del mutuo salvato",
+    "mortgageRemoved": "Dettaglio del mutuo rimosso",
+    "removeMortgageAllocation": "Rimuovi dettaglio",
+    "mortgageSaveError": "Impossibile salvare il dettaglio. Verifica che le parti corrispondano all'importo del pagamento.",
+    "mortgageSavedSummary": "Totali salvati: {{currency}} {{principal}} di capitale ({{principalPercentage}}%) e {{currency}} {{interest}} di interessi ({{interestPercentage}}%)",
+    "mortgageHistoricalNote": "Questo pagamento è precedente al saldo registrato del mutuo. La ripartizione viene salvata, ma il debito non viene ridotto di nuovo.",
+    "mortgageBankManagedNote": "La tua banca comunica il saldo di questo prestito, quindi la ripartizione viene salvata senza registrare di nuovo la quota capitale.",
     "section": "Finanze",
     "monthPrevious": "Mese precedente",
     "monthNext": "Mese successivo",
@@ -2159,6 +2173,7 @@
     "byIncome": "Per entrate",
     "byExpenses": "Per spese",
     "net": "Netto",
+    "netFlow": "Flusso netto",
     "assetsAndAccounts": "Attività e Conti",
     "youOwn": "Hai",
     "youOwe": "Devi",
@@ -2762,7 +2777,9 @@
         "unlink_transfer": "Scollega trasferimento",
         "update_goal": "Aggiorna obiettivo",
         "update_budget": "Aggiorna budget",
-        "delete_budget": "Elimina budget"
+        "delete_budget": "Elimina budget",
+        "update_transaction_notes": "Modifica note della transazione",
+        "create_category_group": "Crea gruppo di categorie"
       },
       "summary": {
         "categorize": "{{count}} transazione/i → {{category}}",
@@ -2780,7 +2797,9 @@
         "updateGoal": "{{name}} → {{changes}}",
         "updateBudget": "{{category}} ({{month}}): {{before}} → {{after}}",
         "deleteBudget": "{{category}}: {{amount}} per {{month}}",
-        "deleteRecurringBudget": "{{category}}: {{amount}} ogni mese da {{month}}"
+        "deleteRecurringBudget": "{{category}}: {{amount}} ogni mese da {{month}}",
+        "updateTransactionNotes": "{{description}}: {{before}} → {{after}}",
+        "createCategoryGroup": "“{{name}}”"
       }
     },
     "conversation": {

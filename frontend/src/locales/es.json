@@ -890,6 +890,20 @@
   },
   "transactions": {
     "title": "Transacciones",
+    "mortgageAllocation": "Desglose del pago de la hipoteca",
+    "mortgagePrincipal": "Amortización de capital",
+    "mortgageInterest": "Intereses",
+    "mortgageCurrencyHint": "Introduce todas las partes en {{currency}}.",
+    "mortgageSplitPercentages": "División del pago: {{principal}}% capital / {{interest}}% intereses",
+    "mortgagePaymentTotal": "Total de las partes: {{currency}} {{total}}; pago: {{currency}} {{payment}}",
+    "saveMortgageAllocation": "Guardar desglose de la hipoteca",
+    "mortgageSaved": "Desglose de la hipoteca guardado",
+    "mortgageRemoved": "Desglose de la hipoteca eliminado",
+    "removeMortgageAllocation": "Eliminar desglose",
+    "mortgageSaveError": "No se pudo guardar el desglose. Comprueba que las partes sumen el importe del pago.",
+    "mortgageSavedSummary": "Totales guardados: {{currency}} {{principal}} de capital ({{principalPercentage}}%) y {{currency}} {{interest}} de intereses ({{interestPercentage}}%)",
+    "mortgageHistoricalNote": "Este pago es anterior al saldo registrado de la hipoteca. Su división se guarda, pero la deuda no se reduce de nuevo.",
+    "mortgageBankManagedNote": "Tu banco informa del saldo de este préstamo, así que la división se guarda sin registrar de nuevo la amortización.",
     "section": "Financiero",
     "monthPrevious": "Mes anterior",
     "monthNext": "Mes siguiente",
@@ -2159,6 +2173,7 @@
     "byIncome": "Por ingresos",
     "byExpenses": "Por gastos",
     "net": "Neto",
+    "netFlow": "Flujo neto",
     "assetsAndAccounts": "Activos y Cuentas",
     "youOwn": "Lo que tienes",
     "youOwe": "Lo que debes",
@@ -2762,7 +2777,9 @@
         "unlink_transfer": "Desvincular transferencia",
         "update_goal": "Actualizar objetivo",
         "update_budget": "Actualizar presupuesto",
-        "delete_budget": "Eliminar presupuesto"
+        "delete_budget": "Eliminar presupuesto",
+        "update_transaction_notes": "Editar notas de la transacción",
+        "create_category_group": "Crear grupo de categorías"
       },
       "summary": {
         "categorize": "{{count}} transacción(es) → {{category}}",
@@ -2780,7 +2797,9 @@
         "updateGoal": "{{name}} → {{changes}}",
         "updateBudget": "{{category}} ({{month}}): {{before}} → {{after}}",
         "deleteBudget": "{{category}}: {{amount}} para {{month}}",
-        "deleteRecurringBudget": "{{category}}: {{amount}} cada mes desde {{month}}"
+        "deleteRecurringBudget": "{{category}}: {{amount}} cada mes desde {{month}}",
+        "updateTransactionNotes": "{{description}}: {{before}} → {{after}}",
+        "createCategoryGroup": "“{{name}}”"
       }
     },
     "conversation": {

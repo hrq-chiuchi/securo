@@ -920,6 +920,20 @@
   },
   "transactions": {
     "title": "Transakce",
+    "mortgageAllocation": "Rozpis splátky hypotéky",
+    "mortgagePrincipal": "Splátka jistiny",
+    "mortgageInterest": "Úrok",
+    "mortgageCurrencyHint": "Zadejte všechny části v {{currency}}.",
+    "mortgageSplitPercentages": "Rozdělení splátky: {{principal}}% jistina / {{interest}}% úrok",
+    "mortgagePaymentTotal": "Součet částí: {{currency}} {{total}}; splátka: {{currency}} {{payment}}",
+    "saveMortgageAllocation": "Uložit rozpis hypotéky",
+    "mortgageSaved": "Rozpis hypotéky uložen",
+    "mortgageRemoved": "Rozpis hypotéky odstraněn",
+    "removeMortgageAllocation": "Odstranit rozpis",
+    "mortgageSaveError": "Rozpis hypotéky se nepodařilo uložit. Zkontrolujte, zda se části rovnají splátce.",
+    "mortgageSavedSummary": "Uložené součty: {{currency}} {{principal}} jistina ({{principalPercentage}}%) a {{currency}} {{interest}} úrok ({{interestPercentage}}%)",
+    "mortgageHistoricalNote": "Tato splátka předchází zaznamenanému zůstatku hypotéky. Rozdělení se uloží, dluh se ale znovu nesnižuje.",
+    "mortgageBankManagedNote": "Zůstatek tohoto úvěru hlásí vaše banka, proto se rozdělení uloží bez opětovného zaúčtování jistiny.",
     "section": "Finance",
     "monthPrevious": "Předchozí měsíc",
     "monthNext": "Další měsíc",
@@ -2282,6 +2296,7 @@
     "byIncome": "Podle příjmů",
     "byExpenses": "Podle výdajů",
     "net": "Čisté",
+    "netFlow": "Čistý tok",
     "assetsAndAccounts": "Aktiva a účty",
     "youOwn": "Vlastníte",
     "youOwe": "Dlužíte",
@@ -2925,7 +2940,9 @@
         "unlink_transfer": "Zrušit propojení převodu",
         "update_goal": "Upravit cíl",
         "update_budget": "Upravit rozpočet",
-        "delete_budget": "Smazat rozpočet"
+        "delete_budget": "Smazat rozpočet",
+        "update_transaction_notes": "Upravit poznámku transakce",
+        "create_category_group": "Vytvořit skupinu kategorií"
       },
       "summary": {
         "categorize": "{{count}} transakcí → {{category}}",
@@ -2947,7 +2964,9 @@
         "updateGoal": "{{name}} → {{changes}}",
         "updateBudget": "{{category}} ({{month}}): {{before}} → {{after}}",
         "deleteBudget": "{{category}}: {{amount}} na {{month}}",
-        "deleteRecurringBudget": "{{category}}: {{amount}} každý měsíc od {{month}}"
+        "deleteRecurringBudget": "{{category}}: {{amount}} každý měsíc od {{month}}",
+        "updateTransactionNotes": "{{description}}: {{before}} → {{after}}",
+        "createCategoryGroup": "„{{name}}“"
       }
     },
     "conversation": {
