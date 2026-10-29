@@ -110,8 +110,17 @@ async function openCategoryPrompt() {
 beforeEach(() => {
   vi.clearAllMocks()
   vi.setSystemTime(new Date('2026-10-20T12:00:00'))
-  api.transactions.list.mockResolvedValue({ items: [transaction], total: 1, page: 1, limit: 50 })
-  api.transactions.update.mockResolvedValue({ ...transaction, category_id: newCategory.id, category: newCategory })
+  api.transactions.list.mockImplementation(async () => ({
+    items: [api.transactions.update.mock.calls.length > 0
+      ? { ...transaction, category_id: newCategory.id, category: newCategory }
+      : transaction],
+    total: 1,
+    page: 1,
+    limit: 50,
+  }))
+  api.transactions.update.mockResolvedValue({
+    ...transaction, category_id: newCategory.id, category: newCategory,
+  })
   api.transactions.transferPair.mockResolvedValue(counterpart)
   api.transactions.attachments.list.mockResolvedValue([])
   api.categories.list.mockResolvedValue([oldCategory, newCategory])
@@ -160,5 +169,10 @@ describe('paired-transfer category confirmation', () => {
         apply_to_transfer_pair: applyToTransferPair,
       }),
     ))
+
+    await waitFor(() => {
+      expect(screen.queryByRole('heading', { name: t('common.edit') })).not.toBeInTheDocument()
+      expect(screen.getByText(newCategory.name)).toBeInTheDocument()
+    })
   })
 })

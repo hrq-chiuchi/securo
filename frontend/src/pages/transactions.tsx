@@ -2245,7 +2245,7 @@ export default function TransactionsPage() {
           <p className="text-sm text-muted-foreground">
             {t('transactions.confirmTransferCategoryDesc')}
           </p>
-          <DialogFooter className="flex-col sm:flex-row sm:justify-end gap-2">
+          <DialogFooter className="flex-col sm:flex-row sm:flex-wrap sm:justify-end gap-2">
             <Button
               className="w-full sm:w-auto"
               variant="outline"
